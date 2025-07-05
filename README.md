@@ -2,6 +2,7 @@
 Code for paper DHC-ME: A Decentralized Hybrid Cooperative Approach for
 Multi-Robot Autonomous Exploration (IROS 2025).
 
+![alt text](images/m_robot_exploratio_framework.drawio.png)
 ## Video
 
 ## Prerequisites
