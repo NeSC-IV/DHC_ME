@@ -6,6 +6,8 @@ Multi-Robot Autonomous Exploration (IROS 2025).
 ## Video
 
 ## Prerequisites
+**Note**: Please use a computer with a dedicated graphics card.
+
 This project has been tested on **Ubuntu 20.04 (ROS Noetic)**, run the following commands to install required tools:
 
 ```bash
@@ -26,7 +28,32 @@ libignition-common3-profiler-dev \
 python3-tk
 ```
 
-## Compile and Run
+## Compile
+```bash
+git clone https://github.com/NeSC-IV/DHC_ME.git
+cd DHC_ME
+catkin_make
+```
+
+## Run DHC-ME in simulation
+After compilation you can start a sample exploration demo. You need to open 3 terminals at the same time, and run the following 3 commands in sequence.
+
+- Open the simulation environment in the first terminal:
+```bash
+source devel/setup.bash && roslaunch exploration_manager multi_robot_sim_env.launch
+```
+- Run the local_planner in the second terminal:
+```bash
+source devel/setup.bash && roslaunch exploration_manager multi_robot_move.launch
+```
+- Start the exploration in the third terminal:
+```bash
+source devel/setup.bash && roslaunch exploration_manager multi_robot_exploration.launch
+```
+By default you can see an outdoor environment **scene_1.world**. The mobile robot will automatically start exploring after the file `multi_robot_exploration.launch` is run.
+
+### Diagram of operational results
+![alt text](images/results_1.png)
 
 ## Citation
 

@@ -1,0 +1,12 @@
+/.vscode
+/.catkin_workspace
+/code_ideas
+/src/FAEL/CMakeLists.txt
+/src/FAEL/files/exploration_data/*.txt
+/build
+/devel
+/tf
+/.history
+/3rdparty
+/src/FAEL/files/exploration_data
+/real_car/car_env_set
