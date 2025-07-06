@@ -1,0 +1,21 @@
+<launch>
+
+<!-- <arg name="cloud_topic" default="/kitti/velo/pointcloud"/> -->
+<arg name="cloud_topic" default="mid/points"/>
+<arg name="odom_topic" default="laser_odom_init"/>
+<arg name="ns" default="jackal_0"/>
+<arg name="viz" default="false"/>
+
+<group ns="$(arg ns)">
+  <node name="ground_segmentation" pkg="patchworkpp" type="demo" output="log">
+    <rosparam command="load" file="$(find patchworkpp)/config/params.yaml" />
+    <param name="cloud_topic" value="$(arg cloud_topic)"/>
+    <param name="odom_topic" value="$(arg odom_topic)"/>
+  </node>
+
+  <group if="$(arg viz)">
+    <node name="$(anon rviz)" pkg="rviz" type="rviz" args="-d $(find patchworkpp)/rviz/$(arg ns)_demo.rviz"/>
+  </group>
+</group>
+
+</launch>

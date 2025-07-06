@@ -2,7 +2,10 @@
 Code for paper DHC-ME: A Decentralized Hybrid Cooperative Approach for
 Multi-Robot Autonomous Exploration (IROS 2025).
 
+**Note**: The code is currently being uploaded and will be available soon. Please check back shortly for the complete repository.
+
 ![alt text](images/m_robot_exploratio_framework.drawio.png)
+
 ## Video
 
 ## Prerequisites
@@ -58,3 +61,5 @@ By default you can see an outdoor environment **scene_1.world**. The mobile robo
 ## Citation
 
 ## Acknowledgement
+Thanks to the code of [patchwork-plusplus-ros](https://github.com/url-kaist/patchwork-plusplus-ross "patchwork-plusplus-ros") and [FAEL](https://github.com/SYSU-RoboticsLab/FAEL "FAEL") .
+
