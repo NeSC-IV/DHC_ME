@@ -45,6 +45,9 @@ After compilation you can start a sample exploration demo. You need to open 3 te
 ```bash
 source devel/setup.bash && roslaunch exploration_manager multi_robot_sim_env.launch
 ```
+
+**Note:** After running this command, please wait patiently until Gazebo has fully loaded the models before executing subsequent programs. The waiting time varies depending on the computer's performance.
+
 - Run the local_planner in the second terminal:
 ```bash
 source devel/setup.bash && roslaunch exploration_manager multi_robot_move.launch
